@@ -1,0 +1,432 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: 0;
+
+}
+
+body {
+    min-width: 100vh;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    display: flex;
+    flex-direction: column;
+}
+
+header {
+    height: 15vh;
+    background-color: #201e1e;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+main {
+    flex: 1; /* completa o restante */
+    height: 80vh;
+    min-height: 80vh;
+    background-color: #F2F0EF;
+}
+
+footer {
+    height: 10vh;
+    background-color: #201e1e;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+
+}
+
+#home {
+    min-height: 70vh;
+    padding: 4%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap:5%;
+}
+
+.post-container {
+    width: 300px;
+    min-height: 200px;
+    background-color: #000000;
+    border-radius: 10px;
+    box-shadow: 5px 5px 9px gray;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin: 20px auto;
+}
+
+.post-autor {
+    width: 100%;
+    text-align: center;
+    font-size: 16px;
+    font-weight: 600px;
+    margin-bottom: 30px;
+    color:white;
+}
+
+.post-conteudo {
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 30px;
+    color:white;
+}
+
+.post-data {
+    font-size: 14px;
+    margin-top: auto;
+    color:white;
+}
+
+@media (max-width: 600px) {
+    header {
+        height: 15vh;
+        font-size: 20px;
+    }
+    .post-container {
+        width: 90%;
+    }
+}
+
+#login {
+    width: 100%;
+    min-height: 70vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#login form {
+    width: 30%;
+    min-width: 350px;
+    height: 500px;
+    color: #22eb10;
+    background-color: #000000;
+    box-shadow: 5px 5px 10px gray;
+    border: 2px solid #11fd31;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: flex-start;
+    padding: 20px;
+    border: 10px solid rgb(46, 244, 52);
+}
+
+#login form h2 {
+    font-size: 30px;
+    font-weight: 700;
+    text-align: center;
+}
+
+#login form label {
+    font-size: 20px;
+    font-weight: 600;
+    
+}
+
+#login form #email, #login form #senha {
+    width: 158px;
+    height: 10px;
+    resize: none;
+    border: 1px solid rgb(0, 0, 0);
+    border-radius: 5px;
+    padding: 5px;
+    font-family: Arial;
+    font-size: 18px;
+    
+}
+
+#login form button {
+    width: 90%;
+    height: 40px;
+    background-color: rgb(46, 244, 52);
+    border: none;
+    color: #000000;
+    border-radius: 5px;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    margin: 0 auto;
+}
+
+#login form button:hover {
+    background-color: #ffffff;
+    color: rgb(46, 244, 52);
+    transition: 200ms;
+    border: 2px solid rgb(46, 244, 52);
+}
+
+#novopost {
+    width: 100%;
+    min-height: 70vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.post-apagar {
+    display: flex;
+    justify-content: end;
+}
+
+#novopost form {
+    width: 30%;
+    height: 500px;
+    background-color: #000000;
+    color: #27f015;
+    box-shadow: 5px 5px 10px gray;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+#novopost form label {
+    font-size: 24px;
+    font-weight: 600;
+    text-align: center;
+}
+
+#novopost form textarea {
+    width: 90%;
+    height: 120px;
+    resize: none;
+    border: 2px solid #4ef126;
+    border-radius: 5px;
+    padding: 5px;
+    font-family: Arial;
+    font-size: 18px;
+}
+
+#novopost form button {
+    width: 90%;
+    height: 40px;
+    background-color: #ffffff;
+    border: none;
+    color: #23a502;
+    border-radius: 5px;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+#novopost form button:hover {
+    color: #23a502;
+    transition: 200ms;
+    border: 2px solid #ffffff;
+}
+
+#menu {
+    height:5vh;
+    display:flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+}
+
+#menu.button {
+    width: 100px;
+    height: 30px;
+    background-color: #4747bd;
+    color: #ffffff;
+    border: none;
+    cursor: pointer;
+}
+
+#menu .button:hover {
+    text-decoration: underline;
+}
+
+@media (max-width: 600px) {
+    header {
+        height: 15vh;
+        font-size: 20px;
+
+    }
+    .post-container {
+        width: 90%;
+    }
+    #novopost {
+        height: 20vh;
+
+    }
+    #novopost form {
+        width: 90%;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+    }
+    #novopost form textarea {
+        width: 95%;
+    }
+}
+
+#error404 {
+    width: 100%;
+    min-height: 70vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 2em;
+    padding: 20px;
+}
+
+h1 {
+    font-size: 40px;
+    color:white
+}
+
+img {
+    width: 390px;
+}
+
+.button {
+    padding: 10px 20px;
+    background-color: rgb(46, 244, 52); 
+    color: #000000; 
+    text-align: center;
+    border-radius: 5px; 
+    font-size: 16px;
+    font-weight: 600;
+    border: none;
+    margin-top: 1%;
+}
+
+p {
+    color: rgb(46, 244, 52);
+}
+
+#adm {
+    display: flex;
+    flex-direction: row;
+    padding: 0;
+}
+
+#adm-users {
+    width: 50%;
+    min-height: 75vh;
+}
+
+#adm-posts {
+    width: 50%;
+    min-height: 75vh;
+    padding: 10px;
+}
+
+#adm-users table {
+    width: 100%;
+}
+
+#adm users table, td, th {
+    border: 1px solid gray;
+    border-collapse: collapse;
+    background-color: rgb(0, 0, 0);
+    color:#ffffff
+}
+
+
+#adm-users button {
+    padding: 5px 30px;
+    height: 30px;
+    margin: 20px 0px;
+    border-radius: 20px;
+    bottom: none;
+    background-color: green;
+    color:white
+}
+
+#adm-users button:hover {
+    background-color: green;
+    color: white;
+    cursor: pointer;
+}
+
+#novousuario {
+    width: 100%;
+    height: 80vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+}
+
+#novousuario form {
+    width: 30%;
+    background-color: rgb(0, 0, 0);
+    height: 70vh;
+    border-radius: 10px;
+    padding: 30px;
+    display: flex;
+    justify-content: center;
+    align-items:left;
+    flex-direction: column;
+    color: rgb(4, 255, 0);
+}
+
+#novousuario form input {
+    margin: 10px 0px;
+    height: 30px;
+    border-radius: 10px;
+    padding-left: 10px;
+}
+
+#novousuario button {
+    padding: 5px 30px;
+    height: 30px;
+    margin: 20px 0px;
+    border-radius: 20px;
+    border: none;
+    background-color: green;
+    color: white;
+
+}
+
+#novousuario button:hover {
+    background-color: green;
+    cursor: pointer;
+}
+
+#adm-posts {
+    width: 50%;
+    min-height: 75vh;
+    padding: 20px;
+}
+
+
+
+#adm-posts table {
+    width: 100%;
+
+}
+
+#adm-posts table {
+    border: 1px solid gray;
+    border-collapse: collapse;
+    background-color: rgb(0, 0, 0);
+    color:#11fd31
+    
+}
+
+#adm-posts td {
+    border: 1px solid gray;
+    border-collapse: collapse;
+    
+}
+
+#adm-posts th {
+    border: 1px solid gray;
+    border-collapse: collapse;
+    
+}
+
