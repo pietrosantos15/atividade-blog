@@ -1,6 +1,5 @@
 ### Curso Técnico de Desenvolvimento de Sistemas - Senai Itapeva
 <h1 align="center"> Blog </h1>
-**Descrição:**
 Este projeto é um sistema de blog construído utilizando o framework Flask e um banco de dados MySQL. O objetivo é criar uma plataforma simples de postagem de conteúdo, onde usuários podem se cadastrar, fazer login, criar e excluir posts. Além disso, há uma área administrativa para gerenciamento de usuários e posts.
 
 ## Índice
